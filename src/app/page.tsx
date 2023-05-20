@@ -1,95 +1,81 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      
+      <section id="Home" className={styles.ladingContent}>
+        <div className={styles.leftSide}>
+          <p>Hi There, <br /> I'm Aashish <span>Baisla</span></p>
+          <p>I am into <span>Full Stack Development</span></p>
+          <button>About Me</button>
+          <div className={styles.socialMediaHandlers}>
+            <Image src="/github.png" width={35} height={35} alt="GitHub Icon"/>
+            <Image src="/youtube.png" width={35} height={35} alt="Youtube Icon"/>
+            <Image src="/facebook.png" width={35} height={35} alt="Facebook Icon"/>
+            <Image src="/linkedin.png" width={35} height={35} alt="LinkedIn Icon"/>
+            <Image src="/telegram.png" width={35} height={35} alt="Telegram Icon"/>
+            <Image src="/twitter.png" width={35} height={35} alt="Twitter Icon"/>
+          </div>
         </div>
-      </div>
+        <div className={styles.rightSide}>
+          <div className={styles.imgContainer}>
+          <Image src="/ashu2.JPEG" style={{objectFit: "cover", objectPosition: "center"}} fill={true} alt="Owner Photo"/>
+          </div>
+        </div>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section id="About" className={styles.sectionAbout}>
+        <h2>ABOUT ME</h2>
+        <p>Hi there! I'm Aashish Baisla, a passionate and accomplished Full Stack Developer with expertise in ReactJS and NodeJS. I have a track record of success in developing mobile-first applications and integrating backend systems. Welcome to my portfolio website!</p>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <section id="Skills" className={styles.sectionSkills}>
+        <h2>SKILLS</h2>
+        <p>ReactJS
+          NodeJS
+          HTML
+          CSS
+          JavaScript
+          Socket.io
+          ExpressJS
+          Axios
+          MySQL
+          Python
+        </p>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      <section id="Education" className={styles.sectionEducation}>
+        <h2>EDUCATION</h2>
+        <p>ReactJS
+          NodeJS
+          HTML
+          CSS
+          JavaScript
+          Socket.io
+          ExpressJS
+          Axios
+          MySQL
+          Python
+        </p>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
+      <section id="Work" className={styles.sectionWork}>
+        <h2>WORK</h2>
+        <p>Hi there! I'm Aashish Baisla, a passionate and accomplished Full Stack Developer with expertise in ReactJS and NodeJS. I have a track record of success in developing mobile-first applications and integrating backend systems. Welcome to my portfolio website!</p>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section id="Experience" className={styles.sectionExperience}>
+        <h2>EXPERIENCE</h2>
+        <p>Hi there! I'm Aashish Baisla, a passionate and accomplished Full Stack Developer with expertise in ReactJS and NodeJS. I have a track record of success in developing mobile-first applications and integrating backend systems. Welcome to my portfolio website!</p>
+      </section>
+
+      <section id="Contact" className={styles.sectionContact}>
+        <h2>CONTACT</h2>
+        <p>Hi there! I'm Aashish Baisla, a passionate and accomplished Full Stack Developer with expertise in ReactJS and NodeJS. I have a track record of success in developing mobile-first applications and integrating backend systems. Welcome to my portfolio website!</p>
+      </section>
+
     </main>
-  )
+  );
 }
