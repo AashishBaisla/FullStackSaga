@@ -4,7 +4,88 @@
   display: flex;
   padding-top: 75px;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.workCard {
+  width: 240px; height: 340px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.imgContainer {
+  width: 200px;
+  height: 400px;
+  /* border-radius: 50%; */
+  border-radius: 10px 10px 0 0 ;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.content p {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  order: 1;
+}
+
+.content div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px 12px;
+  flex-wrap: wrap;
+  order: 2;
+  flex: 1;
+}
+
+.content div > span {
+  padding: 2px 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.453);
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.content a {
+  padding: 4px 8px 4px 6px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color: #1F6FEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  order: 3;
+  font-size: 12px;
 }
 
 /* PORTRAIT (MOBILE DEVICES)*/

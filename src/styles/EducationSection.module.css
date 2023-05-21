@@ -4,25 +4,79 @@
   display: flex;
   padding-top: 75px;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
+
+.sectionEducation h2 {
+  color: purple;
+}
+
+.educationCard {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 28px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.326);
+  background-color: #fff;
+}
+
+.educationCard>div:nth-child(1) {
+  width: 300px;
+  height: 180px;
+  /* border-radius: 50%; */
+  position: relative;
+  overflow: hidden;
+}
+
+.educationCard>div:nth-child(2) {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.educationCard>div:nth-child(2) p {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.collegeName {
+  width: 100%;
+}
+
+.location {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.year {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  color: green;
+}
+
+
 
 /* PORTRAIT (MOBILE DEVICES)*/
-@media screen and (min-width: 450px) {
-
-}
+@media screen and (min-width: 450px) {}
 
 /* LANDSCAPE (MOBILE DEVICES), TABLETS*/
-@media screen and (min-width: 768px) {
-
-}
+@media screen and (min-width: 768px) {}
 
 /* Extra Large Screens, Desktop  */
-@media screen and (min-width: 1024px) {
-
-}
+@media screen and (min-width: 1024px) {}
 
 /* Extra Large Screens  */
-@media screen and (min-width: 1200px) {
-    
-}
+@media screen and (min-width: 1200px) {}

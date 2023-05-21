@@ -11,6 +11,7 @@
     background-color: #ffffffb7;
     backdrop-filter: blur(12.4px);
     -webkit-backdrop-filter: blur(12.4px);
+    z-index: 1;
 }
 
 .mainHeader h1 {
@@ -32,19 +33,26 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 25px;
+    gap: 10px;
 }
 .mainHeader nav button {
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
     background-color: transparent;
+    padding: 4px 10px;
+    border-radius: 15px;
 }
+
+.mainHeader nav button:hover {
+    color: gray;
+} 
 .activeButton {
     color: green;
-    text-decoration: underline;
+    background-color: rgba(128, 128, 128, 0.1) !important;
+    /* text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+    text-underline-offset: 4px; */
 }
 
 /* PORTRAIT (MOBILE DEVICES)*/

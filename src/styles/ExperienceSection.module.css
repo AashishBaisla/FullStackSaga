@@ -1,11 +1,65 @@
 .sectionExperience {
-  height: 100%;
   min-height: 100vh;
-  display: flex;
+  width: 100%; height: 100%;
   padding-top: 75px;
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 32px;
+  position: relative;
 }
+
+.verticalLine {
+  position: absolute;
+  left: 50%; top: 27%;
+  width: 4px; height: 18%;
+  background-color: black;
+}
+
+.cardContainerLeft, .cardContainerRight {
+  width: 100%; max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+.cardContainerLeft {
+  justify-content: flex-start;
+}
+.cardContainerRight {
+  justify-content: flex-end;
+}
+
+.experienceCardLeft, .experienceCardRight {
+  background-color: rgb(255, 162, 0);
+  max-width: 260px; width: 100%;
+  padding: 6px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.experienceCardLeft::after, .experienceCardRight::after  {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+} 
+.experienceCardLeft::after {
+  right: -12px;
+  border-left: 10px solid rgb(255, 162, 0);
+}
+.experienceCardRight::after {
+  left: -12px;
+  border-right: 10px solid rgb(255, 162, 0);
+} 
+
 
 /* PORTRAIT (MOBILE DEVICES)*/
 @media screen and (min-width: 450px) {
