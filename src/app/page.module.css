@@ -1,7 +1,7 @@
 .main {
   height: max-content;
-  padding: 0 15px;
-  background-color:hsla(0,100%,50%,1);
+  background-color: #E5ECFB;
+  /* background-color:hsla(0,100%,50%,1);
   background-image:
   radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
   radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
@@ -9,98 +9,23 @@
   radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
   radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
   radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
-  radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+  radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%); */
 }
 
-.ladingContent, 
-.sectionAbout,
-.sectionSkills, 
-.sectionEducation,
-.sectionWork,
-.sectionExperience,
-.sectionContact {
-  height: 100%;
-  min-height: 100vh;
-  display: flex;
-}
-.sectionAbout,
-.sectionSkills, 
-.sectionEducation,
-.sectionWork,
-.sectionExperience,
-.sectionContact {
-  padding-top: 75px;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.leftSide, .rightSide {
-  flex: 1;
-}
-
-.leftSide {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 24px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.467);
-  letter-spacing: 1.4px;
-}
-
-.leftSide p:first-child {
-  font-size: 38px;
-  font-weight: 900;
-}
-
-.leftSide p:first-child span {
-  color:green;
-}
-
-.leftSide p:nth-child(2) {
-  font-weight: bold;
-}
-
-.leftSide p:nth-child(2) span {
-  color: #fff;
-}
-
-.leftSide button {
-  width: 100px; height: 30px;
-  border-radius: 15px;
-  background-color: #174EA6;
-  color: #fff;
-}
-
-.socialMediaHandlers {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-}
-
-.rightSide {
+.main h2 {
+  text-shadow: 1px 1px rgba(128, 128, 128, 0.545);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.imgContainer {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.326);
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  gap: 8px;
 }
 
 
 /* PORTRAIT (MOBILE DEVICES)*/
 @media screen and (min-width: 450px) {
-  .leftSide {
-    padding-left: 90px;
-  }
+
 }
 
 /* LANDSCAPE (MOBILE DEVICES), TABLETS*/

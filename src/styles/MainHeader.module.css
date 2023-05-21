@@ -3,11 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* box-shadow: 2px 2px 5px gray; */
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.2);
     /* border-bottom: 1px solid #fff; */
     padding: 0 8px;
     position: fixed;
     top: 0;
+    background-color: #ffffffb7;
     backdrop-filter: blur(12.4px);
     -webkit-backdrop-filter: blur(12.4px);
 }
@@ -16,7 +17,6 @@
     display: inline-block;
     font-size: 26px;
     letter-spacing: 2px;
-    font-family: cursive;
 }
 
 .mainHeader h1::after {

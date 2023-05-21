@@ -18,7 +18,7 @@ export const MainHeader = () => {
   }
   return (
     <main className={styles.mainHeader}>
-      <h1>Aashish</h1>
+      <h1>Welcome</h1>
       <nav>
           <button onClick={() => scrollToSection('Home')} className={activeButton === 'Home' ? styles.activeButton : ''}>Home</button>
           <button onClick={() => scrollToSection('About')} className={activeButton === 'About' ? styles.activeButton : ''}>About</button>

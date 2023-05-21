@@ -1,0 +1,58 @@
+.sectionSkills {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding-top: 75px;
+  flex-direction: column;
+  gap: 15px;
+  background-color: purple;
+}
+
+.sectionSkills h2 {
+  color: white;
+}
+
+.skillContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.skillContainer > div {
+  width: 130px; height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* PORTRAIT (MOBILE DEVICES)*/
+@media screen and (min-width: 450px) {
+
+}
+
+/* LANDSCAPE (MOBILE DEVICES), TABLETS*/
+@media screen and (min-width: 768px) {
+
+}
+
+/* Extra Large Screens, Desktop  */
+@media screen and (min-width: 1024px) {
+
+}
+
+/* Extra Large Screens  */
+@media screen and (min-width: 1200px) {
+    
+}
