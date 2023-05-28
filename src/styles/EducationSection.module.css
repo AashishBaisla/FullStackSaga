@@ -23,6 +23,12 @@
   overflow: hidden;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.326);
   background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.educationCard:hover {
+  transform: scale(1.05);
 }
 
 .educationCard>div:nth-child(1) {

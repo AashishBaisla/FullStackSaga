@@ -23,8 +23,8 @@ export const AboutSection = () => {
 
         <div className={styles.rightSide}>
           <p>
-            Hi there! I'm Aashish Baisla, a passionate and accomplished Full
-            Stack Developer with expertise in ReactJS and NodeJS. I have a track
+            Hi there! I'm <strong>Aashish Baisla</strong>, a passionate and accomplished 
+            <strong> Full Stack Developer</strong> with expertise in ReactJS and NodeJS. I have a track
             record of success in developing mobile-first applications and
             integrating backend systems. Welcome to my portfolio website!
           </p>

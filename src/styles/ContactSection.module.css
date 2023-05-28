@@ -8,13 +8,15 @@
   flex-direction: column;
   gap: 15px;
   position: relative;
+  font-style: normal;
 }
 
 .sectionContact h2 {
   margin-bottom: 20px;
 }
 
-.sectionContact > div {
+.sectionContact > div,
+.sectionContact > a {
   width: 300px; height: 60px;
   background-color: rgba(0, 0, 0, 0.234);
   border-radius: 10px;
@@ -46,6 +48,14 @@
 
 .footerContainer span {
   color: yellow;
+}
+
+.socialMediaHandlers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 /* PORTRAIT (MOBILE DEVICES)*/
