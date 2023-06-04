@@ -47,6 +47,25 @@ export const WorkSection = () => {
 
         <div className={styles.workCard}>
           <div className={styles.imgContainer}>
+            <Image src="/contact-illustration.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
+          </div>
+          <div className={styles.content}>
+            <p>Contact Application</p>
+            <div>
+              <span>NextJS</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <Link href='https://github.com/AashishBaisla/Contact.git' target='blank'>
+              <Image src="/coding.svg" width={22} height={22} alt="Coding Icon"/>
+              Code
+            </Link>
+          </div>
+        </div>
+
+        <div className={styles.workCard}>
+          <div className={styles.imgContainer}>
             <Image src="/notepad.png" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
           </div>
           <div className={styles.content}>
