@@ -6,14 +6,14 @@ export const AboutSection = () => {
   return (
     <section id="About" className={styles.sectionAbout}>
       <h2>
-        <Image src="/user.svg" width={30} height={30} alt="User Icon" />
+        <Image src="user.svg" width={30} height={30} alt="User Icon" />
         ABOUT ME
       </h2>
       <div className={styles.aboutContent}>
         <div className={styles.leftSide}>
           <div className={styles.imgContainer}>
             <Image
-              src="/ashu3.JPEG"
+              src="ashu3.JPEG"
               style={{ objectFit: "cover", objectPosition: "center" }}
               fill={true}
               alt="Owner Photo"
