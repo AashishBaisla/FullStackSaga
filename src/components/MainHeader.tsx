@@ -6,7 +6,8 @@ import Image from 'next/image';
 
 export const MainHeader = () => {
   const [activeButton, setActiveButton] = useState<string>('Home');
-  const [toggleMenuBar, settoggleMenuBar] = useState(false)
+  const [toggleMenuBar, settoggleMenuBar] = useState(true);
+
   function scrollToSection(sectionId: string) {
     setActiveButton(sectionId);
     const section = document.getElementById(sectionId);
@@ -18,6 +19,7 @@ export const MainHeader = () => {
       });
     }
   }
+
   return (
     <main className={styles.mainHeader}>
       <h1>Welcome</h1>
