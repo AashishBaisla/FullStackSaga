@@ -17,7 +17,7 @@ export const ExperienceSection = () => {
           <p>Position: Full Stack Developer</p>
         </div>
         <div className={styles.imgContainer}>
-          <Image src={`/indian-express.jpg`} fill={true} alt="Indian Express" />
+          <Image src="indian-express.jpg" fill={true} alt="Indian Express" />
         </div>
       </div>
 
@@ -28,7 +28,7 @@ export const ExperienceSection = () => {
           <p>Position: Full Stack Developer</p>
         </div>
         <div className={styles.imgContainer}>
-          <Image src={`/ncs.jpg`} fill={true} alt="NCS Group"/>
+          <Image src="ncs.jpg" fill={true} alt="NCS Group"/>
         </div>
       </div>
     </section>
