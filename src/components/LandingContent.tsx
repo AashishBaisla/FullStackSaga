@@ -18,6 +18,7 @@ export const LandingContent = () => {
           style={{ objectFit: "cover", objectPosition: "center" }}
           fill={true}
           alt="Owner Photo"
+          priority
         />
       </div>
     </section>

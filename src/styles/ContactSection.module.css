@@ -1,8 +1,10 @@
 .sectionContact {
   height: 100%; width: 100%;
   min-height: calc(100vh - 50px);
-  padding-top: 75px;
-  padding-left: 15px;
+      padding: 60px 15px 20px 15px;
+
+
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -29,7 +31,7 @@
 
 .sectionContact > div:nth-child(5) {
   width: 400px;
-  margin-top: 70px;
+  margin-top: 140px;
   justify-content: center;
   background-color: transparent;
   padding-left: 0;
