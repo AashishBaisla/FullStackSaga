@@ -1,12 +1,12 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../styles/MainHeader.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export const MainHeader = () => {
   const [activeButton, setActiveButton] = useState<string>('Home');
-  const [toggleMenuBar, settoggleMenuBar] = useState(true);
+  const [toggleMenuBar, settoggleMenuBar] = useState(false);
 
   function scrollToSection(sectionId: string) {
     setActiveButton(sectionId);
@@ -19,6 +19,27 @@ export const MainHeader = () => {
       });
     }
   }
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 850px)');
+    const updateSidebarState = () => {
+      if (mediaQuery.matches) {
+        settoggleMenuBar(true);
+      }
+    };
+
+    updateSidebarState();
+
+    const handleResize = () => {
+      updateSidebarState();
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <main className={styles.mainHeader}>

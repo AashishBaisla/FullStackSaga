@@ -10,24 +10,13 @@ export const AboutSection = () => {
         ABOUT ME
       </h2>
       <div className={styles.aboutContent}>
-        <div className={styles.leftSide}>
-          <div className={styles.imgContainer}>
-            <Image
-              src="ashu3.JPEG"
-              style={{ objectFit: "cover", objectPosition: "center" }}
-              fill={true}
-              alt="Owner Photo"
-            />
-          </div>
-        </div>
-
-        <div className={styles.rightSide}>
           <p>
             Hi there! I&#39;m <strong>Aashish Baisla</strong>, a passionate and accomplished 
-            <strong> Full Stack Developer</strong> with expertise in ReactJS and NodeJS. I have a track
+            <strong> Full Stack Developer</strong> with expertise in ReactJS, NextJS and NodeJS. I have a track
             record of success in developing mobile-first applications and
             integrating backend systems. Welcome to my portfolio website!
           </p>
+
           <p>
             With several years of experience in the industry, I have worked on a
             wide range of projects, collaborating with cross-functional teams to
@@ -50,7 +39,7 @@ export const AboutSection = () => {
             technologies and trends is essential to me. I am always eager to
             explore new tools and frameworks that can enhance my development
             process and improve the overall user experience. I am a strong
-            believer in clean and maintainable code, and I follow industry best
+            believer in clean and maintainable code, and follow industry best
             practices to ensure the quality and reliability of my work.
           </p>
           {/* <p>
@@ -61,7 +50,6 @@ export const AboutSection = () => {
             difference in people&#39;s lives. If you have any exciting projects or
             collaboration opportunities, feel free to get in touch!
           </p> */}
-        </div>
       </div>
     </section>
   );

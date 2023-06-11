@@ -23,10 +23,11 @@ export const SkillSection = () => {
           <div><Image src="bootstrap.svg" width={50} height={50} alt="User Icon" /><span>BootStrap</span></div>
           <div><Image src="git.svg" width={50} height={50} alt="User Icon" /><span>Git</span></div>
           <div><Image src="github.svg" width={50} height={50} alt="User Icon" /><span>GitHub</span></div>
+          <div><Image src="mongodb-2.svg" width={50} height={50} alt="User Icon" /><span>MongoDB</span></div>
           <div><Image src="mysql.svg" width={50} height={50} alt="User Icon" /><span>MySQL</span></div>
           <div><Image src="python.svg" width={50} height={50} alt="User Icon" /><span>Python</span></div>
           <div><Image src="vscode.svg" width={50} height={50} alt="User Icon" /><span>VS Code</span></div>
-          <div><Image src="gcp.svg" width={50} height={50} alt="User Icon" /><span>GCP</span></div>
+          {/* <div><Image src="gcp.svg" width={50} height={50} alt="User Icon" /><span>GCP</span></div> */}
         </div>
     </section>
   )

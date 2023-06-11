@@ -2,7 +2,7 @@
   height: 100%;
   min-height: 100vh;
   display: flex;
-  padding-top: 75px;
+  padding: 60px 15px 20px 15px;
   flex-direction: column;
   gap: 25px;
 }
@@ -11,15 +11,27 @@
   color: purple;
 }
 
-.educationCard {
+.cardContainer {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.educationCard {
+  width: 100%; height: 250px;
+  display: flex;
   align-content: center;
   justify-content: flex-start;
-  gap: 28px;
+  flex-direction: column;
+  gap: 10px;
   border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
   overflow: hidden;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.326);
   background-color: #fff;
@@ -28,18 +40,18 @@
 }
 
 .educationCard:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
-.educationCard>div:nth-child(1) {
-  width: 300px;
-  height: 180px;
-  /* border-radius: 50%; */
+.educationCard > div:nth-child(1) {
+  width: 100%;
+  height: 100%;
   position: relative;
+  border-radius: 6px 6px 0 0;
   overflow: hidden;
 }
 
-.educationCard>div:nth-child(2) {
+.educationCard > div:nth-child(2) {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -48,9 +60,8 @@
   gap: 6px;
 }
 
-.educationCard>div:nth-child(2) p {
+.educationCard > div:nth-child(2) p {
   width: 100%;
-  font-size: 20px;
   font-weight: bold;
 }
 
@@ -58,26 +69,35 @@
   width: 100%;
 }
 
-.location {
+.locationYear {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 4px;
+  gap: 8px;
+  font-size: 12px;
 }
-
-.year {
-  width: 100%;
-  font-size: 20px;
-  font-weight: 600;
-  color: green;
-}
-
-
 
 /* PORTRAIT (MOBILE DEVICES)*/
 @media screen and (min-width: 450px) {}
 
+@media screen and (min-width: 560px) {
+  .cardContainer {
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  .educationCard {
+    padding: 0;
+    height: 180px;
+    flex-direction: row;
+    font-size: 16px;
+    gap: 28px;
+  }
+  .educationCard > div:nth-child(1) {
+    width: 250px;
+  }
+}
 /* LANDSCAPE (MOBILE DEVICES), TABLETS*/
 @media screen and (min-width: 768px) {}
 
