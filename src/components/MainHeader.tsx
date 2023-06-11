@@ -41,7 +41,6 @@ export const MainHeader = () => {
     };
   }, []);
 
-
   return (
     <main className={styles.mainHeader}>
       <h1>Welcome</h1>

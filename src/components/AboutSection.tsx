@@ -11,7 +11,7 @@ export const AboutSection = () => {
       </h2>
       <div className={styles.aboutContent}>
           <p>
-            Hi there! I'm <strong>Aashish Baisla</strong>, a passionate and accomplished 
+            Hi there! I&#39;m <strong>Aashish Baisla</strong>, a passionate and accomplished 
             <strong> Full Stack Developer</strong> with expertise in ReactJS, NextJS and NodeJS. I have a track
             record of success in developing mobile-first applications and
             integrating backend systems. Welcome to my portfolio website!
@@ -43,11 +43,11 @@ export const AboutSection = () => {
             practices to ensure the quality and reliability of my work.
           </p>
           {/* <p>
-            When I'm not coding, you can find me exploring new technologies,
+            When I&#39;m not coding, you can find me exploring new technologies,
             contributing to open-source projects, or engaging in personal
             projects to further enhance my skills. I am passionate about
             creating meaningful and impactful software solutions that make a
-            difference in people's lives. If you have any exciting projects or
+            difference in people&#39;s lives. If you have any exciting projects or
             collaboration opportunities, feel free to get in touch!
           </p> */}
       </div>
