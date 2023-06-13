@@ -6,8 +6,9 @@ export const SkillSection = () => {
   return (
     <section id="Skills" className={styles.sectionSkills}>
         <h2>
-        <Image src="coding.svg" width={40} height={40} alt="User Icon" />
-        SKILLS</h2>
+          <Image src="coding.svg" width={40} height={40} alt="User Icon" />
+          SKILLS
+        </h2>
         <div className={styles.skillContainer}>
           <div><Image src="react.svg" width={50} height={50} alt="User Icon" /><span>ReactJS</span></div>
           <div><Image src="next.svg" style={{filter: "invert(1)"}} width={50} height={50} alt="User Icon" /><span>NextJS</span></div>

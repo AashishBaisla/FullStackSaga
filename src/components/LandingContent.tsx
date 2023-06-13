@@ -10,7 +10,7 @@ export const LandingContent = () => {
           Hi! I am, <br />
           Aashish <span>Baisla</span>
         </p>
-        <span>Full Stack Developer</span>
+        <span><span>Full Stack</span> Developer</span>
       </div>
       <div className={styles.imgContainer}>
         <Image

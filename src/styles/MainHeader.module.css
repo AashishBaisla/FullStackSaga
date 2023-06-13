@@ -6,7 +6,7 @@
     justify-content: space-between;
     box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.2);
     /* border-bottom: 1px solid #fff; */
-    padding: 0 8px;
+    padding: 0 12px;
     position: fixed;
     top: 0;
     background-color: #ffffffb7;
@@ -38,7 +38,7 @@
 .mainHeader nav {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
     gap: 10px;
     position: absolute;

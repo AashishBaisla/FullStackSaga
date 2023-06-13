@@ -7,7 +7,7 @@ export const WorkSection = () => {
   return (
     <section id="Work" className={styles.sectionWork}>
       <h2>
-        <Image src="work.svg" width={40} height={40} alt="User Icon" />
+        <Image src="work.svg" width={30} height={30} alt="User Icon" />
         WORK</h2>
       <div className={styles.container}>
 

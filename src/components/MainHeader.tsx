@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import styles from '../styles/MainHeader.module.css';
-import Link from 'next/link';
 import Image from 'next/image';
 
 export const MainHeader = () => {
@@ -9,6 +8,9 @@ export const MainHeader = () => {
   const [toggleMenuBar, settoggleMenuBar] = useState(false);
 
   function scrollToSection(sectionId: string) {
+    if (window.innerWidth < 850) {
+      settoggleMenuBar(false);
+    }
     setActiveButton(sectionId);
     const section = document.getElementById(sectionId);
     if (section) {
@@ -21,9 +23,8 @@ export const MainHeader = () => {
   }
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 850px)');
     const updateSidebarState = () => {
-      if (mediaQuery.matches) {
+      if (window.innerWidth > 850) {
         settoggleMenuBar(true);
       }
     };
@@ -44,7 +45,7 @@ export const MainHeader = () => {
   return (
     <main className={styles.mainHeader}>
       <h1>Welcome</h1>
-      <button className={styles.forMobile} onClick={() => settoggleMenuBar(!toggleMenuBar)}>&#9776; Menu</button>
+      <Image src={`/menu.svg`} className={styles.forMobile} onClick={() => settoggleMenuBar(!toggleMenuBar)} width={26} height={26} style={{cursor: 'pointer'}} alt='Menu'/>
       {toggleMenuBar && <nav>
           <button onClick={() => scrollToSection('Home')} className={activeButton === 'Home' ? styles.activeButton : ''}>Home</button>
           <button onClick={() => scrollToSection('About')} className={activeButton === 'About' ? styles.activeButton : ''}>About</button>
@@ -52,7 +53,6 @@ export const MainHeader = () => {
           <button onClick={() => scrollToSection('Education')} className={activeButton === 'Education' ? styles.activeButton : ''}>Education</button>
           <button onClick={() => scrollToSection('Work')} className={activeButton === 'Work' ? styles.activeButton : ''}>Work</button>
           <button onClick={() => scrollToSection('Experience')} className={activeButton === 'Experience' ? styles.activeButton : ''}>Experience</button>
-          <button onClick={() => scrollToSection('Contact')} className={activeButton === 'Contact' ? styles.activeButton : ''}>Contact</button>
       </nav>}
     </main>
   )

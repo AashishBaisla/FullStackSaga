@@ -1,19 +1,14 @@
 .sectionExperience {
   width: 100%;
-  min-height: 100vh;
   height: 100%;
-  padding: 60px 15px 20px 15px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 32px;
+  padding: 20px;
 }
 
 .card {
   font-size: 14px;
   width: 100%; max-width: 450px;
   height: 140px;
-  margin: 0 auto;
+  margin: 30px auto;
   border-radius: 10px;
   display: flex;
   align-items: center;
