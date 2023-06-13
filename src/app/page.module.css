@@ -20,6 +20,10 @@
   font-size: 30px;
   letter-spacing: 1.5px;
   gap: 8px;
+  scroll-margin-top: 100px;
+  margin-top: 30px;
+  scroll-padding-top: 100px;
+  /* scroll-snap-type: proximity; */
 }
 
 

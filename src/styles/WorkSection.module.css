@@ -1,13 +1,11 @@
 .sectionWork {
   height: 100%;
-  min-height: 100vh;
-  display: flex;
-  padding: 60px 15px 20px 15px;
-  flex-direction: column;
-  gap: 30px;
+  padding: 20px;
 }
 
 .container {
+  width: 100%; max-width: 1000px;
+  margin: 30px auto;
   display: flex;
   align-items: center;
   justify-content: center;

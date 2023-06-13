@@ -1,10 +1,6 @@
 .sectionEducation {
   height: 100%;
-  min-height: 100vh;
-  display: flex;
-  padding: 60px 15px 20px 15px;
-  flex-direction: column;
-  gap: 25px;
+  padding: 20px;
 }
 
 .sectionEducation h2 {
@@ -12,14 +8,14 @@
 }
 
 .cardContainer {
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 55px;
+  gap: 35px;
 }
 
 .educationCard {
@@ -84,7 +80,6 @@
 @media screen and (min-width: 560px) {
   .cardContainer {
     height: 100%;
-    margin: auto;
     justify-content: center;
   }
   .educationCard {

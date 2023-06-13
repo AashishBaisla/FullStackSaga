@@ -23,13 +23,16 @@
     font-weight: 600;
 }
 
-.text > p span {
-    color: rgb(255, 111, 0);
+.text > p > span,
+.text >span > span {
+    color: rgb(255, 68, 0);
 }
 
 .text > span {
     font-weight: bold;
-    color: green;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
 }
 
 .imgContainer {

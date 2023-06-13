@@ -1,6 +1,7 @@
 import { MainHeader } from '@/components/MainHeader'
 import './globals.css'
 import { Inter, Poppins } from 'next/font/google'
+import { MainFooter } from '@/components/MainFooter'
 
 const inter = Inter({ subsets: ['latin'] })
 const poppins= Poppins({weight: ["100", "200", "300", "700"], subsets: ['latin']})
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body>
         <MainHeader/>
         {children}
+        <MainFooter/>
       </body>
     </html>
   )

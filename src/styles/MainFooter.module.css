@@ -1,0 +1,44 @@
+.footerContainer {
+  width: 100%; padding: 10px;
+  background-color: black;
+  color: #fff;
+}
+
+.footerContainer > div {
+  width: 100%; max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerContainer > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footerContainer > div > p span {
+  color: yellow;
+}
+
+/* PORTRAIT (MOBILE DEVICES)*/
+@media screen and (min-width: 450px) {
+  .footerContainer > div {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* LANDSCAPE (MOBILE DEVICES), TABLETS*/
+@media screen and (min-width: 768px) {}
+
+/* Extra Large Screens, Desktop  */
+@media screen and (min-width: 1024px) {}
+
+/* Extra Large Screens  */
+@media screen and (min-width: 1200px) {}
