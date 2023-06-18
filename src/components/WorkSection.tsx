@@ -13,7 +13,7 @@ export const WorkSection = () => {
 
         <div className={styles.workCard}>
           <div className={styles.imgContainer}>
-            <Image src="space.png" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
+            <Image src="social.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
           </div>
           <div className={styles.content}>
             <p>Social Media App
@@ -29,7 +29,7 @@ export const WorkSection = () => {
 
         <div className={styles.workCard}>
           <div className={styles.imgContainer}>
-            <Image src="chatting.png" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
+            <Image src="chatting.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
           </div>
           <div className={styles.content}>
             <p>Chat Application</p>
@@ -47,7 +47,7 @@ export const WorkSection = () => {
 
         <div className={styles.workCard}>
           <div className={styles.imgContainer}>
-            <Image src="contact-illustration.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
+            <Image src="contact-application.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
           </div>
           <div className={styles.content}>
             <p>Contact Application</p>
@@ -66,7 +66,27 @@ export const WorkSection = () => {
 
         <div className={styles.workCard}>
           <div className={styles.imgContainer}>
-            <Image src="notepad.png" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
+            <Image src="movies.webp" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
+          </div>
+          <div className={styles.content}>
+            <p>CineVerse</p>
+            <div>
+              <span>NextJS</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>MongoDB</span>
+            </div>
+            <Link href='https://github.com/AashishBaisla/CineVerse.git' target='blank'>
+              <Image src="coding.svg" width={22} height={22} alt="Coding Icon"/>
+              Code
+            </Link>
+          </div>
+        </div>
+
+        <div className={styles.workCard}>
+          <div className={styles.imgContainer}>
+            <Image src="notepad.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
           </div>
           <div className={styles.content}>
             <p>Notepad</p>
@@ -83,7 +103,7 @@ export const WorkSection = () => {
 
         <div className={styles.workCard}>
           <div className={styles.imgContainer}>
-            <Image src="login-clone.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
+            <Image src="login.avif" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
           </div>
           <div className={styles.content}>
             <p>Login Pages Clone</p>

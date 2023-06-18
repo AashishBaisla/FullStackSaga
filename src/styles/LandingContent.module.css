@@ -4,6 +4,11 @@
     display: flex;
     position: relative;
 }
+
+.backgroundColor {
+    display: none;
+}
+
 .text {
     display: flex;
     align-items: flex-start;
@@ -18,17 +23,17 @@
     flex: 1;
 }
 
-.text > p {
+.text>p {
     font-size: 28px;
     font-weight: 600;
 }
 
-.text > p > span,
-.text >span > span {
+.text>p>span,
+.text>span>span {
     color: rgb(255, 68, 0);
 }
 
-.text > span {
+.text>span {
     font-weight: bold;
     text-transform: uppercase;
     font-weight: bold;
@@ -36,8 +41,10 @@
 }
 
 .imgContainer {
-    width: 100%; max-width: unset;
-    height: 100%; max-height: 100vh; 
+    width: 100%;
+    max-width: unset;
+    height: 100%;
+    max-height: 100vh;
     position: absolute;
     right: 0;
     z-index: 0;
@@ -54,29 +61,68 @@
 /* LANDSCAPE (MOBILE DEVICES), TABLETS*/
 @media screen and (min-width: 768px) {
     .imgContainer {
-        width: 100%; max-width: 70vw;
+        width: 100%;
+        max-width: 70vw;
     }
+
     .text {
         justify-content: center;
         padding-top: unset;
         gap: 24px;
     }
+
     .text p:first-child {
         font-size: 32px;
         font-weight: 800;
+    }
+
+    .text>p>span,
+    .text>span>span {
+        color: #ffffff;
+    }
+
+    .backgroundColor {
+        display: flex;
+        position: absolute;
+        background: rgb(255, 90, 18);
+        background: radial-gradient(circle, rgba(255, 90, 18, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+        z-index: 1;
+        top: 100px;
+        left: -200px;
+        width: 120%;
+        height: 200px;
+        transform: rotate(140deg);
     }
 }
 
 /* Extra Large Screens, Desktop  */
 @media screen and (min-width: 1024px) {
     .imgContainer {
-        width: 100%; max-width: 50vw;
+        width: 100%;
+        max-width: 50vw;
     }
+
     .text p:first-child {
         font-size: 38px;
         font-weight: 900;
     }
+
+    .backgroundColor {
+        top: 30px;
+        left: -170px;
+        width: 140%;
+        height: 200px;
+        transform: rotate(150deg);
+    }
 }
 
 /* Extra Large Screens  */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .backgroundColor {
+        top: 100px;
+        left: -160px;
+        width: 100dvw;
+        height: 200px;
+        transform: rotate(150deg);
+    }
+}

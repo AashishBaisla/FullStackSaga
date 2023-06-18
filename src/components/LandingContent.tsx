@@ -5,6 +5,7 @@ import Image from "next/image";
 export const LandingContent = () => {
   return (
     <section id="Home" className={styles.landingContent}>
+      <div className={styles.backgroundColor}></div>
       <div className={styles.text}>
         <p>
           Hi! I am, <br />
