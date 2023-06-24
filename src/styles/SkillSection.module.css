@@ -1,5 +1,6 @@
 .sectionSkills {
   height: 100%;
+  min-height: 100vh;
   padding: 20px 12px;
   background-color: purple;
 }
