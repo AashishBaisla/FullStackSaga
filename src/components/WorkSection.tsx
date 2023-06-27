@@ -12,111 +12,73 @@ export const WorkSection = () => {
       <div className={styles.container}>
 
         <div className={styles.workCard}>
-          <div className={styles.imgContainer}>
-            <Image src="social.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
-          </div>
-          <div className={styles.content}>
-            <p>Social Media App
-              <Image src="private.png" width={25} height={25} alt="User Icon" />
-            </p>
             <div>
-              <span>ReactJS</span>
-              <span>NodeJS</span>
-              <span>Socket.io</span>
+              <Image src="social.jpg" fill={true}  alt="User Icon" />
             </div>
-          </div>
+            <div>
+              <span>Social Media App</span>
+              <Image src="private.svg" width={25} height={25} alt="User Icon" />
+            </div>
         </div>
 
         <div className={styles.workCard}>
-          <div className={styles.imgContainer}>
-            <Image src="chatting.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
-          </div>
-          <div className={styles.content}>
-            <p>Chat Application</p>
             <div>
-              <span>ReactJS</span>
-              <span>NodeJS</span>
-              <span>Socket.io</span>
+              <Image src="chatting.jpg" fill={true}  alt="User Icon" />
             </div>
-            <Link href='https://github.com/AashishBaisla/Chat-App.git' target='blank'>
-              <Image src="coding.svg" width={22} height={22} alt="Coding Icon"/>
-              Code
-            </Link>
-          </div>
+            <div>
+              <span>Chat Application</span>
+              <Link href='https://github.com/AashishBaisla/Chat-App.git' target='blank'>
+                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
+              </Link>
+            </div>
         </div>
 
         <div className={styles.workCard}>
-          <div className={styles.imgContainer}>
-            <Image src="contact-application.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
-          </div>
-          <div className={styles.content}>
-            <p>Contact Application</p>
             <div>
-              <span>NextJS</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+              <Image src="contact-application.jpg" fill={true}  alt="User Icon" />
             </div>
-            <Link href='https://github.com/AashishBaisla/Contact.git' target='blank'>
-              <Image src="coding.svg" width={22} height={22} alt="Coding Icon"/>
-              Code
-            </Link>
-          </div>
+            <div>
+              <span>Contact Application</span>
+              <Link href='https://github.com/AashishBaisla/Contact.git' target='blank'>
+                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
+              </Link>
+            </div>
         </div>
 
         <div className={styles.workCard}>
-          <div className={styles.imgContainer}>
-            <Image src="movies.webp" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
-          </div>
-          <div className={styles.content}>
-            <p>CineVerse</p>
             <div>
-              <span>NextJS</span>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>MongoDB</span>
+              <Image src="movies.webp" fill={true}  alt="User Icon" />
             </div>
-            <Link href='https://github.com/AashishBaisla/CineVerse.git' target='blank'>
-              <Image src="coding.svg" width={22} height={22} alt="Coding Icon"/>
-              Code
-            </Link>
-          </div>
+            <div>
+              <span>CineVerse</span>
+              <Link href='https://github.com/AashishBaisla/CineVerse.git' target='blank'>
+                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
+              </Link>
+            </div>
         </div>
 
         <div className={styles.workCard}>
-          <div className={styles.imgContainer}>
-            <Image src="notepad.jpg" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
-          </div>
-          <div className={styles.content}>
-            <p>Notepad</p>
             <div>
-              <span>Python</span>
-              <span>TKinter</span>
+              <Image src="notepad.jpg" fill={true}  alt="User Icon" />
             </div>
-            <Link href='https://github.com/AashishBaisla/Notepad.git' target='blank'>
-              <Image src="coding.svg" width={22} height={22} alt="Coding Icon"/>
-              Code
-            </Link>
-          </div>
+            <div>
+              <span>Notepad</span>
+              <Link href='https://github.com/AashishBaisla/Notepad.git' target='blank'>
+                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
+              </Link>
+            </div>
         </div>
 
         <div className={styles.workCard}>
-          <div className={styles.imgContainer}>
-            <Image src="login.avif" style={{ objectFit: "cover", objectPosition: "center" }} fill={true} alt="User Icon" />
-          </div>
-          <div className={styles.content}>
-            <p>Login Pages Clone</p>
             <div>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+              <Image src="login.avif" fill={true}  alt="User Icon" />
             </div>
-            <Link href='https://github.com/AashishBaisla/Instagram-LoginPage.git' target='blank'>
-              <Image src="coding.svg" width={22} height={22} alt="Coding Icon"/>
-              Code
-            </Link>
-          </div>
+            <div>
+              <span>Login Pages Clone</span>
+              <Link href='https://github.com/AashishBaisla/Instagram-LoginPage.git' target='blank'>
+                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
+              </Link>
+            </div>
         </div>
 
       </div>

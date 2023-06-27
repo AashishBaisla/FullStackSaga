@@ -38,10 +38,6 @@
   transition: transform 0.2s ease-out;
 }
 
-.skillContainer>div:hover {
-  transform: scale(1.1);
-}
-
 /* PORTRAIT (MOBILE DEVICES)*/
 @media screen and (min-width: 520px) {
   .skillContainer {
@@ -52,6 +48,9 @@
   }
   .skillContainer > div {
     width: 130px;
+  }
+  .skillContainer>div:hover {
+    transform: scale(1.1);
   }
 }
 
