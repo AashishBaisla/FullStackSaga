@@ -10,8 +10,8 @@ export const SkillSection = () => {
           SKILLS
         </h2>
         <div className={styles.skillContainer}>
-          <div><Image src="next.svg" style={{filter: "invert(1)"}} width={50} height={50} alt="User Icon" /><span>NextJS</span></div>
           <div><Image src="react.svg" width={50} height={50} alt="User Icon" /><span>ReactJS</span></div>
+          <div><Image src="next.svg" style={{filter: "invert(1)"}} width={50} height={50} alt="User Icon" /><span>NextJS</span></div>
           <div><Image src="nodejs.svg" width={50} height={50} alt="User Icon" /><span>NodeJS</span></div>
           <div><Image src="html-5.svg" width={50} height={50} alt="User Icon" /><span>HTML 5</span></div>
           <div><Image src="css.svg" width={50} height={50} alt="User Icon" /><span>CSS</span></div>
