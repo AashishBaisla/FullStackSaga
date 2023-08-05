@@ -45,7 +45,7 @@ export const MainHeader = () => {
   return (
     <main className={styles.mainHeader}>
       <h1>Welcome</h1>
-      <Image src="menu.svg" className={styles.forMobile} onClick={() => settoggleMenuBar(!toggleMenuBar)} width={26} height={26} style={{cursor: 'pointer'}} alt='Menu'/>
+      <Image src={`icons/menu.svg`} className={styles.forMobile} onClick={() => settoggleMenuBar(!toggleMenuBar)} width={26} height={26} style={{cursor: 'pointer'}} alt='Menu'/>
       {toggleMenuBar && <nav>
           <button onClick={() => scrollToSection('Home')} className={activeButton === 'Home' ? styles.activeButton : ''}>Home</button>
           <button onClick={() => scrollToSection('About')} className={activeButton === 'About' ? styles.activeButton : ''}>About</button>

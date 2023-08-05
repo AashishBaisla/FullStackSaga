@@ -3,83 +3,80 @@ import styles from '../styles/WorkSection.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const data = [
+  {
+    image: 'social.jpg',
+    title: 'Social Media App',
+    url: 'https://github.com/AashishBaisla',
+    private: true,
+  },
+  {
+    image: 'chatting.jpg',
+    title: 'Chat Application',
+    url: 'https://github.com/AashishBaisla/Chat-App.git',
+    private: false,
+  },
+  {
+    image: 'contact-application.jpg',
+    title: 'Contact Application',
+    url: 'https://github.com/AashishBaisla/Contact.git',
+    private: false,
+  },
+  {
+    image: 'movies.webp',
+    title: 'CineVerse',
+    url: 'https://github.com/AashishBaisla/CineVerse.git',
+    private: false,
+  },
+  {
+    image: 'github-profile.png',
+    title: 'GitHub Profile Viewer',
+    url: 'https://github.com/AashishBaisla/GitHub-Profile-Viewer',
+    private: false,
+  },
+  {
+    image: 'notepad.jpg',
+    title: 'Notepad',
+    url: 'https://github.com/AashishBaisla/Notepad.git',
+    private: false,
+  },
+  {
+    image: 'login.avif',
+    title: 'Login Pages Clone',
+    url: 'https://github.com/AashishBaisla/Instagram-LoginPage.git',
+    private: false,
+  },
+]
+
 export const WorkSection = () => {
   return (
     <section id="Work" className={styles.sectionWork}>
       <h2>
-        <Image src="work.svg" width={30} height={30} alt="User Icon" />
+        <Image src={`icons/work.svg`} width={30} height={30} alt="Work" />
         WORK</h2>
       <div className={styles.container}>
 
-        <div className={styles.workCard}>
-            <div>
-              <Image src="social.jpg" fill={true}  alt="User Icon" />
-            </div>
-            <div>
-              <span>Social Media App</span>
-              <Image src="private.svg" width={25} height={25} alt="User Icon" />
-            </div>
-        </div>
+        {data?.map((item) => {
+          return (
+            <div className={styles.workCard} key={item?.title}>
+              <div>
+                <Image src={`images/${item?.image}`} fill={true} alt={item?.title} />
+              </div>
 
-        <div className={styles.workCard}>
-            <div>
-              <Image src="chatting.jpg" fill={true}  alt="User Icon" />
-            </div>
-            <div>
-              <span>Chat Application</span>
-              <Link href='https://github.com/AashishBaisla/Chat-App.git' target='blank'>
-                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
-              </Link>
-            </div>
-        </div>
+              <div>
+                <span>{item?.title}</span>
+                {!item?.private ?
+                  <Link href={`${item?.url}`} target='blank'>
+                    <Image src={`icons/github-black.svg`} width={22} height={22} alt="GitHub" />
+                  </Link>
+                  :
+                  <Image src={`icons/private.svg`} width={22} height={22} alt="private" />
+                }
+              </div>
 
-        <div className={styles.workCard}>
-            <div>
-              <Image src="contact-application.jpg" fill={true}  alt="User Icon" />
             </div>
-            <div>
-              <span>Contact Application</span>
-              <Link href='https://github.com/AashishBaisla/Contact.git' target='blank'>
-                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
-              </Link>
-            </div>
-        </div>
-
-        <div className={styles.workCard}>
-            <div>
-              <Image src="movies.webp" fill={true}  alt="User Icon" />
-            </div>
-            <div>
-              <span>CineVerse</span>
-              <Link href='https://github.com/AashishBaisla/CineVerse.git' target='blank'>
-                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
-              </Link>
-            </div>
-        </div>
-
-        <div className={styles.workCard}>
-            <div>
-              <Image src="notepad.jpg" fill={true}  alt="User Icon" />
-            </div>
-            <div>
-              <span>Notepad</span>
-              <Link href='https://github.com/AashishBaisla/Notepad.git' target='blank'>
-                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
-              </Link>
-            </div>
-        </div>
-
-        <div className={styles.workCard}>
-            <div>
-              <Image src="login.avif" fill={true}  alt="User Icon" />
-            </div>
-            <div>
-              <span>Login Pages Clone</span>
-              <Link href='https://github.com/AashishBaisla/Instagram-LoginPage.git' target='blank'>
-                <Image src="github-black.svg" width={22} height={22} alt="GitHub"/>
-              </Link>
-            </div>
-        </div>
+          )
+        })}
 
       </div>
     </section>

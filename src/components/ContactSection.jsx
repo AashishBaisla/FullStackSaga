@@ -4,31 +4,48 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const ContactSection = () => {
+
+  const data = [
+    {
+      title: '+919999849181',
+      url: 'tel:+919999849181',
+      image: 'call.svg',
+      alt: 'Phone',
+    },
+    {
+      title: 'Baisla9181@gmail.com',
+      url: 'mailto:baisla9181@gmail.com',
+      image: 'email.svg',
+      alt: 'Email',
+    },
+    {
+      title: 'GitHub',
+      url: 'https://github.com/AashishBaisla',
+      image: 'github.svg',
+      alt: 'GitHub',
+    },
+    {
+      title: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/ashiishbaisla/',
+      image: 'linkedin.png',
+      alt: 'LinkedIn',
+    },
+  ]
   return (
     <section id="Contact" className={styles.sectionContact}>
-      {/* <h2>
-        <Image src="contact.svg" width={40} height={40} alt="Contact Icon" />
-        Let's Connect
-      </h2> */}
+
       <div className={styles.contactContainer}>
-        <Link href="tel:+919999849181">
-          <Image src="call.svg" width={30} height={30} alt="Phone Icon" />
-          +919999849181
-        </Link>
-        <Link href="mailto:baisla9181@gmail.com">
-          <Image src="email.svg" width={30} height={30} alt="Email Icon" />
-          Baisla9181@gmail.com
-        </Link>
-        <Link href="https://github.com/AashishBaisla">
-          <Image src="github.svg" width={30} height={30} alt="GitHub Icon" />
-          GitHub
-        </Link>
-        <Link href="https://www.linkedin.com/in/ashiishbaisla/">
-          <Image src="linkedin.png" width={30} height={30} alt="LinkedIn Icon"
-          />
-          LinkedIn
-        </Link>
+        {data?.map((item) => {
+          return (
+            <Link href={`${item?.url}`} key={item?.title}>
+              <Image src={`icons/${item?.image}`} width={30} height={30} alt={item?.alt} />
+              {item?.title}
+            </Link>
+
+          )
+        })}
       </div>
+
     </section>
   );
 };
