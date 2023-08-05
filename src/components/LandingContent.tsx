@@ -15,7 +15,7 @@ export const LandingContent = () => {
       </div>
       <div className={styles.imgContainer}>
         <Image
-          src={`images/ashu2.jpeg`}
+          src={`images/ashu2.JPEG`}
           style={{ objectFit: "cover", objectPosition: "center" }}
           fill={true}
           alt="Owner Photo"
