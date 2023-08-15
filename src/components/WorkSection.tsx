@@ -20,6 +20,12 @@ const data = [
     image: 'contact-application.jpg',
     title: 'Contact Application',
     url: 'https://github.com/AashishBaisla/Contact.git',
+    private: true,
+  },
+  {
+    image: 'todo.png',
+    title: 'Todo App',
+    url: 'https://github.com/AashishBaisla/TaskBuddy',
     private: false,
   },
   {
@@ -59,11 +65,11 @@ export const WorkSection = () => {
         {data?.map((item) => {
           return (
             <div className={styles.workCard} key={item?.title}>
-              <div>
-                <Image src={`images/${item?.image}`} fill={true} alt={item?.title} />
+              <div className={styles.imgContainer}>
+                <Image src={`images/${item?.image}`} fill={true} alt={item?.title} style={{ objectFit: 'cover' }} />
               </div>
 
-              <div>
+              <div className={styles.title}>
                 <span>{item?.title}</span>
                 {!item?.private ?
                   <Link href={`${item?.url}`} target='blank'>

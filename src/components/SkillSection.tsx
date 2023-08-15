@@ -91,7 +91,7 @@ export const SkillSection = () => {
           {data?.map((item) => {
             return (
               <div key={item?.name}>
-                <Image src={`icons/${item?.image}`} width={50} height={50} alt="User Icon" />
+                <Image src={`icons/${item?.image}`} width={50} height={50} alt="User Icon" style={{filter: ['NextJS', 'Socket.io'].includes(item?.name) ? 'invert(1)' : 'none'}} />
                 <span>{item?.name}</span>
               </div>
             )

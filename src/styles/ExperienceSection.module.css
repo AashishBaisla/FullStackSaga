@@ -1,6 +1,10 @@
 .sectionExperience {
-  height: 100%;
   padding: 20px;
+
+}
+
+.sectionExperience h2 {
+  margin-bottom: 40px;
 }
 
 .container {
@@ -9,7 +13,6 @@
   justify-content: center;
   flex-direction: column;
   gap: 30px;
-  padding: 20px 0 0 0;
 }
 
 .card {
@@ -23,6 +26,7 @@
   background-color: white;
   box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.299);
   overflow: hidden;
+  color: #000;
 }
 
 .card > div:nth-child(1) {

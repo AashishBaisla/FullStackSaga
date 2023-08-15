@@ -6,7 +6,7 @@ export const AboutSection = () => {
   return (
     <section id="About" className={styles.sectionAbout}>
       <h2>
-        <Image src={`icons/user.svg`} width={30} height={30} alt="User" />
+        <Image src={`icons/user.svg`} width={32} height={32} alt="User" />
         ABOUT ME
       </h2>
       <div className={styles.aboutContent}>

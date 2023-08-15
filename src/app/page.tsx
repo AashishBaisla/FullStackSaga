@@ -22,7 +22,7 @@ export default function Home() {
 
       <ExperienceSection />
 
-      <ContactSection/>
+      <ContactSection />
     </main>
   );
 }
