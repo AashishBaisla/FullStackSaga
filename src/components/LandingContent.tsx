@@ -6,25 +6,21 @@ export const LandingContent = () => {
   return (
     <section id="Home" className={styles.landingContent}>
       <div className={styles.backgroundColor}></div>
-      <div className={styles.text}>
-        <p>
-          Aashish 
-          <span> Baisla</span>
-        </p>
-        <span>
-          <span>Full Stack </span> 
-          Developer
-        </span>
-      </div>
+      <span className={styles.text}>
+        <span>Full Stack Developer</span><br/>
+        <span>Aashish Baisla</span>
+        {/* <a href='/IT-file.pdf' download="your-cv.pdf">Download CV</a> */}
+      </span>
       <div className={styles.imgContainer}>
         <Image
-          src={`images/ashu2.JPEG`}
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          src={`images/ashu-4.jpg`}
+          style={{ objectFit: "cover", objectPosition: 'top' }}
           fill={true}
           alt="Owner Photo"
           priority
         />
       </div>
+
     </section>
   );
 };

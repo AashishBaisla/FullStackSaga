@@ -73,7 +73,7 @@ export const WorkSection = () => {
                 <span>{item?.title}</span>
                 {!item?.private ?
                   <Link href={`${item?.url}`} target='blank'>
-                    <Image src={`icons/github-black.svg`} width={22} height={22} alt="GitHub" />
+                    <Image src={`icons/github.svg`} width={24} height={24} alt="GitHub" />
                   </Link>
                   :
                   <Image src={`icons/private.svg`} width={22} height={22} alt="private" />
