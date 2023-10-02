@@ -22,8 +22,8 @@ export const LandingContent = () => {
 
         <div className={styles.infoContainer}>
           <div className={styles.info}>
-            <span className={styles.position}>Full Stack Developer</span>
             <span className={styles.name}>Aashish Baisla</span><br/>
+            <span className={styles.position}>Full Stack Developer</span>
           </div>
           <div className={styles.iconsContainer}>
             {data?.map((item, index) => {
