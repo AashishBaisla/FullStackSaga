@@ -1,22 +1,39 @@
 .landingContent {
     min-height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    align-content: center;
     overflow: hidden;
+    position: relative;
 }
 
-.infoContainer {
-    order: 2;
-    width: 80%;
-    padding: 10px 20px;
-    border-radius: 0 0 12px 12px;
+.landingContent>section {
+    margin: 0 auto;
+    width: 90%;
+    height: 410px;
+    border-radius: 12px;
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(14.3px);
     -webkit-backdrop-filter: blur(14.3px);
     background-color: rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.imgContainer {
+    display: none;
+}
+
+.infoContainer {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .info {
@@ -26,77 +43,94 @@
 .position {
     font-weight: bold;
     font-size: 20px;
-    color: black;
+    color: #301934;
     letter-spacing: 1.2px;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 8px;
 }
 
 .name {
     color: #301934;
     font-size: 36px;
-    font-weight: 800;
+    font-weight: bolder;
     letter-spacing: 1.4px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.imgContainer {
-    order: 1;
-    position: relative;
-    width: 80%;
-    height: 350px;
-}
-
-.imgContainer>img {
-    border-radius: 8px 8px 0 0;
-    object-fit: cover;
-    object-position: top;
-    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .iconsContainer {
-    display: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50px);
+    place-items: flex-start;
+    gap: 20px;
 }
 
 .letsGo {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #301934;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.4);
+    width: 100px;
+    height: 32px;
+    border-radius: 5px;
 }
 
-@media screen and (min-width: 450px) {
-    .imgContainer {
-        height: 450px;
+.downloadCV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: #164333;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.4);
+    width: 150px;
+    height: 32px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 340px) {
+    .landingContent>section {
+        height: 360px;
+    }
+
+    .position {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .iconsContainer {
+        gap: 8px;
     }
 
 }
 
-@media screen and (min-width: 1024px) {
-    .landingContent {
-        flex-direction: row;
-        padding: 0 50px;
+@media screen and (min-width: 540px) {
+    .landingContent>section {
+        height: 360px;
     }
 
     .imgContainer {
-        order: 2;
-        width: 400px;
-        height: 500px;
+        display: inline;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: -40px;
+        right: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid rgba(255, 255, 255, 0.5);
     }
 
-    .imgContainer>img {
-        border-radius: 0 12px 12px 0;
+    .iconsContainer {
+        max-width: 400px;
     }
+}
 
-    .infoContainer {
-        order: 1;
-        color: #fff;
-        border-radius: 12px 0 0 12px;
-        width: calc(100% - 500px);
-        height: 500px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        flex-direction: column;
-        gap: 30px;
-        padding-left: 40px;
-    }
+
+@media screen and (min-width: 940px) {
 
     .position {
         font-size: 26px;
@@ -106,23 +140,26 @@
         font-size: 52px;
     }
 
-    .iconsContainer {
-        width: 100%;
-        max-width: 400px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 50px);
-        place-items: flex-start;
-        gap: 20px 20px;
+    .landingContent>section {
+        height: 500px;
+        flex-direction: row-reverse;
+
     }
 
-    .letsGo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #301934;
-        box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.4);
-        width: 100px;
-        height: 32px;
-        border-radius: 5px;
+    .infoContainer {
+        width: calc(100% - 400px);
+        height: 100%;
+        padding: 40px;
+        justify-content: space-around;
+    }
+
+    .imgContainer {
+        position: relative;
+        top: unset;
+        right: unset;
+        width: 400px;
+        height: 100%;
+        border-radius: 0 12px 12px 0;
+        border: none;
     }
 }

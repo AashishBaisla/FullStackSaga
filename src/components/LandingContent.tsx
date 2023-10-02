@@ -9,39 +9,39 @@ export const LandingContent = () => {
   ];
 
   return (
-    <section id="Home" className={styles.landingContent}>
+    <main id="Home" className={styles.landingContent}>
 
       <div className={styles.imgOverlay}>
-        <Image src={`images/ashu-4.jpg`} style={{ filter: 'blur(18px)' }}
-          fill={true} alt="Aashish Baisla" priority />
+        <Image src={`images/ashu-4.jpg`} fill={true} style={{ filter: 'blur(18px)' }} alt="Aashish Baisla" priority />
       </div>
 
-
-
-      <div className={styles.imgContainer}>
-        <Image src={`images/ashu-4.jpg`} fill={true} alt="Aashish Baisla" priority />
-      </div>
-
-      <div className={styles.infoContainer}>
-        <div className={styles.info}>
-          <span className={styles.position}>Full Stack Developer</span><br />
-          <span className={styles.name}>Aashish Baisla</span>
+      <section>
+        <div className={styles.imgContainer}>
+          <Image src={`images/ashu-4.jpg`} fill={true} style={{ objectFit: 'cover', objectPosition: 'top' }} alt="Aashish Baisla" priority />
         </div>
 
-        <div className={styles.iconsContainer}>
-          {data?.map((item, index) => {
-            return (
-              <Image key={index} src={`icons/${item}`} width={50} height={50} alt="User Icon" style={{ filter: ['next', 'socket'].includes(item) ? 'invert(1)' : 'none' }} />
-            )
-          })}
+        <div className={styles.infoContainer}>
+          <div className={styles.info}>
+            <span className={styles.position}>Full Stack Developer</span>
+            <span className={styles.name}>Aashish Baisla</span><br/>
+          </div>
+          <div className={styles.iconsContainer}>
+            {data?.map((item, index) => {
+              return (
+                <Image key={index} src={`icons/${item}`} width={50} height={50} alt="User Icon" style={{ filter: ['next', 'socket'].includes(item) ? 'invert(1)' : 'none' }} />
+              )
+            })}
+          </div>
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '20px'}}>
+          <Link href={`#About`} className={styles.letsGo}>About Me</Link>
+          <a className={styles.downloadCV} href='/Ashish-Resume.pdf' download="Ashish_Baisla_CV.pdf"><Image width={16} height={16} src={`icons/download-w.svg`} alt="Download"/>Download CV</a>
+          </div>
         </div>
 
-        <Link href={`#About`} className={styles.letsGo}>About Me</Link>
-        {/* <a href='/IT-file.pdf' download="your-cv.pdf">Download CV</a> */}
-      </div>
+      </section>
 
 
 
-    </section>
+    </main>
   );
 };

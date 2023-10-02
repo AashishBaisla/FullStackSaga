@@ -1,11 +1,12 @@
 import { MainHeader } from '@/components/MainHeader'
 import './globals.css'
-import { Inter, Poppins } from 'next/font/google'
 import { MainFooter } from '@/components/MainFooter'
 import { Metadata } from 'next'
+import { ABeeZee } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-const poppins = Poppins({ weight: ["100", "200", "300", "700"], subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
+// const poppins = Poppins({ weight: ["100", "200", "300", "700"], subsets: ['latin'] })
+const aBeeZee = ABeeZee({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata: Metadata = {
   title: 'Aashish Baisla - Full Stack Web Developer',
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body className={aBeeZee.className}>
         <MainHeader />
         {children}
         <MainFooter />
