@@ -22,7 +22,7 @@ export const LandingContent = () => {
 
         <div className={styles.infoContainer}>
           <div className={styles.info}>
-            <span className={styles.name}>Aashish Baisla</span><br/>
+            <span className={styles.name}>Aashish Baisla</span><br />
             <span className={styles.position}>Full Stack Developer</span>
           </div>
           <div className={styles.iconsContainer}>
@@ -32,9 +32,9 @@ export const LandingContent = () => {
               )
             })}
           </div>
-          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '20px'}}>
-          <Link href={`#About`} className={styles.letsGo}>About Me</Link>
-          <a className={styles.downloadCV} href='/Ashish-Resume.pdf' download="Ashish_Baisla_CV.pdf"><Image width={16} height={16} src={`icons/download-w.svg`} alt="Download"/>Download CV</a>
+          <div className={styles.buttonContainer}>
+            <Link href={`#About`} className={styles.letsGo}>About Me</Link>
+            <a className={styles.downloadCV} href='/Ashish-Resume.pdf' download="Ashish_Baisla_CV.pdf"><Image width={16} height={16} src={`icons/download-w.svg`} alt="Download" />Download CV</a>
           </div>
         </div>
 

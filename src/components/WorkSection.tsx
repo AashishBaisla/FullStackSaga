@@ -29,6 +29,12 @@ const data = [
     private: false,
   },
   {
+    image: 'sudoku.jpg',
+    title: 'Sudoku',
+    url: 'https://github.com/AashishBaisla/Sudoku.git',
+    private: true,
+  },
+  {
     image: 'movies.webp',
     title: 'CineVerse',
     url: 'https://github.com/AashishBaisla/CineVerse.git',
@@ -46,12 +52,12 @@ const data = [
     url: 'https://github.com/AashishBaisla/Notepad.git',
     private: false,
   },
-  {
-    image: 'login.avif',
-    title: 'Login Pages Clone',
-    url: 'https://github.com/AashishBaisla/Instagram-LoginPage.git',
-    private: false,
-  },
+  // {
+  //   image: 'login.avif',
+  //   title: 'Login Pages Clone',
+  //   url: 'https://github.com/AashishBaisla/Instagram-LoginPage.git',
+  //   private: false,
+  // },
 ]
 
 export const WorkSection = () => {
