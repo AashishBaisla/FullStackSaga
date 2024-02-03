@@ -71,9 +71,9 @@ export const WorkSection = () => {
         {data?.map((item) => {
           return (
             <div className={styles.workCard} key={item?.title}>
-              <div className={styles.imgContainer}>
+              <Link href={`/project/${item.title.split(" ").join("-")}`} className={styles.imgContainer}>
                 <Image src={`images/${item?.image}`} fill={true} alt={item?.title} style={{ objectFit: 'cover' }} />
-              </div>
+              </Link>
 
               <div className={styles.title}>
                 <span>{item?.title}</span>

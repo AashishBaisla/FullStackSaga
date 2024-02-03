@@ -34,7 +34,7 @@ export const LandingContent = () => {
           </div>
           <div className={styles.buttonContainer}>
             <Link href={`#About`} className={styles.letsGo}>About Me</Link>
-            <a className={styles.downloadCV} href='/Ashish-Resume.pdf' download="Ashish_Baisla_CV.pdf"><Image width={16} height={16} src={`icons/download-w.svg`} alt="Download" />Download CV</a>
+            <Link className={styles.downloadCV} href='/Ashish-Resume.pdf' target="_blank" rel="noopener noreferrer" download><Image width={16} height={16} src={`icons/download-w.svg`} alt="Download" />Download CV</Link>
           </div>
         </div>
 

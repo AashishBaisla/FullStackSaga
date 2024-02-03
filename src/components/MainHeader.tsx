@@ -34,13 +34,13 @@ export const MainHeader = () => {
 
   return (
     <main className={styles.mainHeader}>
-      <h1>Welcome</h1>
+      <Link href={'/'} className={styles.welcome}>Welcome</Link>
       <Image src={`icons/menu.svg`} className={styles.forMobile} onClick={() => settoggleMenuBar(!toggleMenuBar)} width={26} height={26} style={{ cursor: 'pointer' }} alt='Menu' />
       {toggleMenuBar &&
         <nav>
           {tabs?.map((tab) => {
             return (
-              <Link href={`#${tab}`} key={tab}
+              <Link href={`/#${tab}`} key={tab}
                 className={active === tab ? styles.active : ''}
                 onClick={() => handleClick(tab)}>
                 {tab}

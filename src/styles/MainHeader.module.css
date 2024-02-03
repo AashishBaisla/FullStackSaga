@@ -16,13 +16,14 @@
     z-index: 2;
 }
 
-.mainHeader h1 {
+.welcome {
     display: inline-block;
     font-size: 26px;
     letter-spacing: 2px;
+    font-weight: bolder;
 }
 
-.mainHeader h1::after {
+.welcome::after {
     content: "";
     display: inline-block;
     width: 8px;

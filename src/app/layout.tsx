@@ -36,13 +36,15 @@ export const metadata: Metadata = {
     "Developer Portfolio"]
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({children, modal}: { children: React.ReactNode; modal: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={aBeeZee.className}>
         <MainHeader />
         {children}
+        {modal}
         <MainFooter />
+        <div id="modal-root" />
       </body>
     </html>
   )
